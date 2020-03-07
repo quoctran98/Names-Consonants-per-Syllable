@@ -69,10 +69,10 @@ df <- melt(df)
 ggplot(df, aes(x = variable, y = value, fill = variable)) +
   geom_violin() +
   theme(legend.position="none") +
-  ylab("Consonants per Syllable (weighted by name freq.)") +
-  coord_flip() +
+  ylab("Consonants per Syllable (weighted by name frequncy)") +
   xlab("") +
+  coord_flip() +
   ggtitle("Male Names Tend to Have More Consonants per Syllable") +
-  labs(subtitle = "From SSA Data (Babies Born 1880-2018)\nStudent's T-Test P-Value < 2.2e-16")
+  labs(subtitle = "From SSA Data (Babies Born 1880-2018)")
 
 t.test(weightF, weightM)
